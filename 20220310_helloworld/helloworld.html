@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>헬로월드</title>
+    <style>
+        li {
+            color: black;
+        }
+        .incheon {
+            color: darkblue; 
+        } 
+        .korea {
+            color: crimson !important;
+        }
+        /* 동급에 있는 클래스는 아래에 있는 속성이 이긴다. */
+        /* 태그 < 클래스 */
+        #leader {
+            color: violet;
+        }
+    </style>
 </head>
 <body>
     <ul>
         <li class="korea" id="leader">유진</li>
         <li class="korea incheon">가을</li>
         <li class="japan">레이</li>
-        <li class="korea">원영</li>
+        <li class="korea" style="color: green;">원영</li>
         <li class="korea">리즈</li>
         <li class="korea">이서</li>
     </ul>
