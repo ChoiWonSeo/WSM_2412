@@ -16,9 +16,9 @@ li {
 li:nth-child(6) { /* 1부터 시작 */
     text-decoration: underline;
 }
-h2 + h3 { /* h2의 근처에 있는 h3에 적용*/
+h2 + h3 { /* h2의 맨 처음 근처에 있는 h3에 적용*/
     background-color: skyblue;
 }
-h2 ~ h3 { /* 형제가 함께 스타일 적용 */
+h2 ~ h3 { /* h2의 형제 중 여러 h3 */
     font-size: 40px;
 }
