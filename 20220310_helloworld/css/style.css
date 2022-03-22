@@ -1,0 +1,15 @@
+/* 우선순위 : 태그 < 클래스 */
+/* 우선순위 : 동급에 있는 클래스 위 < 아래 */
+/* alt shift 하고 댕기기 그냥 tap은 밀기 */
+li {
+    color: teal;
+}
+.incheon {
+    color: darkblue; 
+} 
+.korea {
+    color: crimson !important;
+}
+#leader {
+    color: violet;
+}
