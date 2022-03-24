@@ -4,12 +4,12 @@
 li {
     color: teal;
 }
-.incheon {
-    color: darkblue; 
-} 
 .korea {
     color: crimson !important;
 }
+.incheon {
+    color: darkblue; 
+} 
 #leader {
     color: violet;
 }
