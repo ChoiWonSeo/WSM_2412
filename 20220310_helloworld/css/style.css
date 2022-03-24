@@ -6,6 +6,10 @@ body > li {
   color: teal;
 }
 
+body > ul:nth-child(1) > ul {
+  background-color: hotpink;
+}
+
 .incheon {
   color: darkblue;
 }
