@@ -1,24 +1,36 @@
 /* 우선순위 : 태그 < 클래스 */
 /* 우선순위 : 동급에 있는 클래스 위 < 아래 */
 /* alt shift 하고 댕기기 그냥 tap은 밀기 */
-li {
-    color: teal;
+body > li {
+  /* 자식 */
+  color: teal;
 }
-.korea {
-    color: crimson !important;
-}
+
 .incheon {
-    color: darkblue; 
-} 
+  color: darkblue;
+}
+
+.korea,
+h6 {
+  /* 콤마 : 함께 */
+  color: crimson !important;
+}
+
 #leader {
-    color: violet;
+  color: violet;
 }
-li:nth-child(6) { /* 1부터 시작 */
-    text-decoration: underline;
+
+li:nth-child(6) {
+  /* 1부터 시작 */
+  text-decoration: underline;
 }
-h2 + h3 { /* h2의 맨 처음 근처에 있는 h3에 적용*/
-    background-color: skyblue;
+
+h2 + h3 {
+  /* h2의 맨 처음 근처에 있는 h3에 적용*/
+  background-color: skyblue;
 }
-h2 ~ h3 { /* h2의 형제 중 여러 h3 */
-    font-size: 40px;
+
+h2 ~ h3 {
+  /* h2의 형제 중 여러 h3 */
+  font-size: 40px;
 }
