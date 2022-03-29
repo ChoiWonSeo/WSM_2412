@@ -1,4 +1,4 @@
-/* 우선순위 : 태그 < 클래스 */
+/* 우선순위 : 태그 < 클래스 < 아이디 */
 /* 우선순위 : 동급에 있는 클래스 위 < 아래 */
 /* alt shift 하고 댕기기 그냥 tap은 밀기 */
 body > li {
@@ -7,6 +7,7 @@ body > li {
 }
 
 body > ul:nth-child(1) > ul {
+  /* 찾는 요소 우클릭 > 검사 > 개발자도구 > 우클릭 > 복사 > 복사 셀럭터 */
   background-color: hotpink;
 }
 
@@ -24,10 +25,13 @@ h6 {
   color: violet;
 }
 
-li:nth-child(6) {
+/* li:nth-child(6) {
   /* 1부터 시작 */
+/* nth-child(n) : n번째 자식 */
+/* first-child : 첫째 자식 */
+/* last-child : 마지막 자식 
   text-decoration: underline;
-}
+} */
 
 h2 + h3 {
   /* h2의 맨 처음 근처에 있는 h3에 적용*/
@@ -37,4 +41,8 @@ h2 + h3 {
 h2 ~ h3 {
   /* h2의 형제 중 여러 h3 */
   font-size: 40px;
+}
+
+li:nth-child(3) {
+  text-decoration: underline;
 }
