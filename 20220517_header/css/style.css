@@ -2,6 +2,7 @@
     --red: crimson;
     --yellow: gold;
     --green: yellowgreen;
+    --font-coler: #333;
 }
 
 * {
@@ -10,3 +11,10 @@
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
