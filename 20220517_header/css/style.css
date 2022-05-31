@@ -24,9 +24,7 @@ header {
     --border-width: 4px;
 }
 .nav-list {
+    display: flex;
+    gap: 16px;
     border: var(--border-width) solid var(--yellow);
-}
-
-.nav-list li {
-    border: var(--border-width) solid var(--green);
 }
