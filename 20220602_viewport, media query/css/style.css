@@ -1,0 +1,20 @@
+body {
+    background-color: #81bef7;
+    font-size: 4rem;
+}
+
+/* <= 1023px : tablet */
+@media screen and (max-width: 1023px) {
+    body {
+        background-color: fuchsia;
+        font-size: 2rem;
+    }
+}
+
+/* <= 419px : mobile */
+@media screen and (max-width: 419px) {
+    body {
+        background-color: forestgreen;
+        font-size: 1rem;
+    }
+}
