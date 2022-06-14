@@ -1,9 +1,9 @@
 // toggle hidden menu
-function toggleMenu(toggleId, navListId) {
+const toggleMenu = function (toggleId, navListId) {
     const toggle = document.getElementById(toggleId);
     const navList = document.getElementById(navListId);
 
-    function clickHandler() {
+    const clickHandler = function () {
         navList.classList.toggle('show-menu'); // add : 추가, remove : 제거, toggle : 추가 / 제거
     }
 
