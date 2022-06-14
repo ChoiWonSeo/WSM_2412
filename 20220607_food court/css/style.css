@@ -121,6 +121,9 @@ nav i {
         right: 0;
         flex-direction: column;
         background-color: lightgrey;
+        height: 0;
+        overflow: hidden;
+        transition: 0.17s;
     }
 
     .nav-link {
@@ -136,6 +139,10 @@ nav i {
 
     .nav-logo {
         margin: 0 auto; /* 로고 가운데 정렬 */
+    }
+
+    .show-menu {
+        height: 164px;
     }
 }
 
