@@ -75,6 +75,9 @@ img {
 
 header {
     background-color: var(--first-color);
+    position: fixed; /* header 위치 고정 */
+    left: 0;
+    right: 0;
 }
 
 nav {
