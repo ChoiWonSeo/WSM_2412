@@ -78,6 +78,7 @@ header {
     position: fixed; /* header 위치 고정 */
     left: 0;
     right: 0;
+    top: 0;
 }
 
 nav {
@@ -103,6 +104,11 @@ nav i {
 
 .nav-link {
     color: #fff;
+}
+
+/* HOME */
+main {
+    margin: 88px 0 0 0;
 }
 
 /* breakpoints */
