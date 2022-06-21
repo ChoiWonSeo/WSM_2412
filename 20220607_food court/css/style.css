@@ -15,11 +15,11 @@
 
     /* font */
     --body-font: 'Noto Sans KR', sans-serif;
-    --biggest-font-size: 2.25rem; /* 36px */
-    --h1-font-size: 2rem; /* 32px */
-    --h2-font-size: 1.5rem; /* 24px */
-    --h3-font-size: 1.25rem; /* 20px */
-    --normal-font-size: 1rem; /* 16px */
+    --biggest-font-size: 2.25rem;  /* 36px */
+    --h1-font-size: 2rem;  /* 32px */
+    --h2-font-size: 1.5rem;  /* 24px */
+    --h3-font-size: 1.25rem;  /* 20px */
+    --normal-font-size: 1rem;  /* 16px */
     --small-font-size: .8rem;
     --smaller-font-size: .75rem;
     
@@ -75,7 +75,7 @@ img {
 
 header {
     background-color: var(--first-color);
-    position: fixed; /* header 위치 고정 */
+    position: fixed;  /* header 위치 고정 */
     left: 0;
     right: 0;
     top: 0;
@@ -84,13 +84,13 @@ header {
 nav {
     height: 44px;
     display: flex;  /* 기본값: 수평 방향 */
-    justify-content: space-between; /* 양쪽정렬 */
-    align-items: center;    /* 교차축 가운데 */
+    justify-content: space-between;  /* 양쪽정렬 */
+    align-items: center;  /* 교차축 가운데 */
 }
 
 nav i {
     color: #fff;
-    font-size: var(--h3-font-size); /* 아이콘 좀 크게 */
+    font-size: var(--h3-font-size);  /* 아이콘 좀 크게 */
 }
 
 .nav-toggle {
@@ -99,7 +99,7 @@ nav i {
 
 .nav-list {
     display: flex;  /* 기본값: 수평 방향 */
-    column-gap: 1.25rem;    /*20px*/
+    column-gap: 1.25rem;  /*20px*/
 }
 
 .nav-link {
@@ -108,18 +108,77 @@ nav i {
 
 /* HOME */
 main {
-    margin: 88px 0 0 0;
+    margin: 88px 32px 44px;  /* 요즘에는 여백을 많이 주는게 훌륭한 디자인이다 */
+    display: flex;  /* card 3개 수평 정렬 */
+    justify-content: center;  /* card 3개 가운데 정렬 */
+    column-gap: 60px;
+    row-gap: 40px;
+    flex-wrap: wrap;  /* 너비 좁아지면, 내리자 */
 }
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+.card {
+    background-color: #f3f3f3;
+    border-radius: 1rem;
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 240px; */
+    flex: 1 0 240px;
+    max-width: 300px;  /* 최대 너비 : 300px */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.25);
+    transition: .4s;
+}
+
+.card:hover .card-time {
+    color: var(--second-color);
+}
+
+/* .card:hover .card-menu {
+    color: #000;
+    transition: .4s;
+} */
+
+.card-image {
+    background: url("../img/plate_crop.png") center center;  /* 가운데를 중심으로 확대, 축소 */
+    background-size: cover;  /* 배경을 꽉차게 */
+    height: 0;
+    padding-bottom: 66.66666667%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 16px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;  /* 날짜 | 식 가운데 정렬 */
+    column-gap: 16px;
+}
+
+.card-menu {
+    text-align: center;  /* 메뉴 가운데 정렬 */
+}
+
 
 /* breakpoints */
 /* 2K & 4K */
 
 /* tablet */
-@media screen and (max-width: 600px) { /* width가 600px가 되면 펼쳐짐 */
+@media screen and (max-width: 600px) {  /* width가 600px가 되면 펼쳐짐 */
     .nav-toggle {
         display: block;
         cursor: pointer;
-        position: absolute; /* 위치 무시. 로고 가운데 정렬 */
+        position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
     }
 
     .nav-list {
@@ -137,17 +196,17 @@ main {
 
     .nav-link {
         color: var(--title-color);
-        display: block; /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
+        display: block;  /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
     }
 
     .nav-item {
-        padding: 0.5rem 1rem; /* 위오아왼 */
-        text-align: center; /* 가운데 정렬 */
-        border-bottom: 1px solid white; /* 아래 선 */
+        padding: 0.5rem 1rem;  /* 위오아왼 */
+        text-align: center;  /* 가운데 정렬 */
+        border-bottom: 1px solid white;  /* 아래 선 */
     }
 
     .nav-logo {
-        margin: 0 auto; /* 로고 가운데 정렬 */
+        margin: 0 auto;  /* 로고 가운데 정렬 */
     }
 
     .show-menu {
