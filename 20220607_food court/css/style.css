@@ -128,13 +128,15 @@ h3 {
     flex-basis: 240px; */
     flex: 1 0 240px;
     max-width: 300px;  /* 최대 너비 : 300px */
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.25);
     transition: .4s;
 }
 
+.now, 
+.card:hover {
+    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.25);
+}
+
+.now .card-time, 
 .card:hover .card-time {
     color: var(--second-color);
 }
