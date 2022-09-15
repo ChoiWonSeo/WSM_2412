@@ -22,3 +22,7 @@ h1 {
 .days-of-the-week {
     color: #aaa;
 }
+
+.first {
+    grid-column-start: 5;
+}
