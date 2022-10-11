@@ -25,3 +25,23 @@ let url = `https://open.neis.go.kr/hub/mealServiceDietInfo?`
         + `MMEAL_SC_CODE=${MMEAL_SC_CODE}`
         + `MLSV_YMD=${MMEAL_SC_CODE}`
         + `Type=json`;
+
+// console.log(url);
+// 실시간으로 급식메뉴 가져오기
+// .data-grid-container>.grid-item에 마우스 올려놓으면(mouseover), handler 함수 호출하자
+let dateGridContainerDiv = document.getElementsByClassName("date-grid-container")[0];
+let gridItems = dateGridContainerDiv.getElementsByClassName("grid-item");
+const handler = (e) => {
+    console.log(year);
+    console.log(month);
+    let date = e.target.innerHTML;
+    console.log(date);
+}
+
+for (let gridItem of gridItems) {
+    gridItem.onmouseover = handler;
+    // gridItem.addEventListener("mouseover", handler);
+}
+
+// handler에서 year, month, date, 식사 로 url 만들어서 AJAX로 급식 정보 가져오자
+// 다 가져왔으면, 조식, 중식, 석식 표시하자
