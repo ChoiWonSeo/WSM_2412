@@ -74,6 +74,7 @@ const urlToJSON = (url) => {
             if (json['mealServiceDietInfo'][0]['head'][1]['RESULT']['CODE'] == 'INFO-000') {
                 // 응답이 제대로 왔으면
                 // json -> HTML
+                // 하나하나 하고싶으면 아래 애들 하나하나 try catch문으로 넣어줘야함 ㅋㅋ
                 breakfast.innerHTML = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
                 lunch.innerHTML = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM'];
                 dinner.innerHTML = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM'];
