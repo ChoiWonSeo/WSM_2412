@@ -4,12 +4,12 @@ const setCalendar = (year, month) => {
     // 그 객체 요일 구하자
     let firstDay = firstDate.getDay();
     let days = ['일', '월', '화', '수', '목', '금', '토'];
-    console.log(`${year}-${month} ${days[firstDay]}요일`) // 2022-9 4요일
+    // console.log(`${year}-${month} ${days[firstDay]}요일`) // 2022-9 4요일
     // html 제어하자
 
     // 오늘 년, 오늘 월, 0 날짜 객체 구하자
     let lastDate = new Date(year, month, 0).getDate();
-    console.log(`${lastDate}일`) // 30일
+    // console.log(`${lastDate}일`) // 30일
 
     // 제목 표시하자
     // html id -> js 변수

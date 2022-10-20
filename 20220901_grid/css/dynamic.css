@@ -45,7 +45,7 @@ main {
 
 .breakfast,
 .lunch,
-.diner {
+.dinner {
     width: 180px;
     border-radius: 8px;
     background-color: beige;
@@ -54,4 +54,10 @@ main {
 
 h1 {
     font-size: 1.25rem;
+}
+
+#breakfast,
+#lunch,
+#dinner {
+    font-size: 12px;
 }
