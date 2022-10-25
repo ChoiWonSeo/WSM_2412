@@ -17,6 +17,7 @@ main {
     border: 2px solid #eee;
     border-radius: 8px;
     padding: 8px;
+    cursor: pointer;
 }
 
 #calendar {
@@ -34,6 +35,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.date-grid-container .grid-item:hover {
+    border-radius: 10px;
+    background-color: salmon;
+    cursor: pointer;
 }
 
 .menu-grid-container {
@@ -61,3 +68,4 @@ h1 {
 #dinner {
     font-size: 12px;
 }
+
