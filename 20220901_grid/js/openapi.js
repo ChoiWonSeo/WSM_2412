@@ -75,9 +75,21 @@ const urlToJSON = (url) => {
                 // 응답이 제대로 왔으면
                 // json -> HTML
                 // 하나하나 하고싶으면 아래 애들 하나하나 try catch문으로 넣어줘야함 ㅋㅋ
-                breakfast.innerHTML = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
-                lunch.innerHTML = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM'];
-                dinner.innerHTML = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM'];
+                let breakfastData = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
+                // (5.13.) << 삭제하기   정규표현식 : (문자 숫자나 .문자)문자
+                breakfastData = breakfastData.replace(/\([0-9\.]*\)/g, "");
+                breakfast.innerHTML = breakfastData;
+
+                let lunchData = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM'];
+                lunchData = lunchData.replace(/\([0-9\.]*\)/g, "");
+                lunch.innerHTML = lunchData;
+
+                let dinnerData = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM'];
+                dinnerData = dinnerData.replace(/\([0-9\.]*\)/g, "");
+                dinner.innerHTML = dinnerData;
+
+                // (    \(
+                // 숫자 한글자
             } else {
                 // 응답이 이상하면
                 // 없음 표시하자
