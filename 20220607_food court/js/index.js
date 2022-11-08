@@ -109,7 +109,7 @@ const showTodayMenu = () => {
     // 요청하자
     fetch(url)
     .then(response => response.json())
-    .then(json => console.log(json)); // json -> HTML에 표시하자
+    .then(json => showMenu(json)); // json -> HTML에 표시하자
 };
 const showMenu = (json) => {
     // html -> js 메뉴 표시하는 부분
